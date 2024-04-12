@@ -6,7 +6,7 @@ tasks:
           cluster:
             kind: Deployment
             name: uds-package-app
-            namespace: uds-package-app-ns
+            namespace: ns-for-uds-package
             condition: Available
 
       # StatefulSets don't show conditions themselves so we look for an underlying Pod
@@ -15,7 +15,7 @@ tasks:
           cluster:
             kind: Pod
             name: app=uds-package-app
-            namespace: uds-package-app-ns
+            namespace: ns-for-uds-package
             condition: Ready
 
   - name: ingress

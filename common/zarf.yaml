@@ -9,15 +9,15 @@ components:
     required: true
     charts:
       - name: uds-package-app-config
-        namespace: uds-package-app-ns
+        namespace: ns-for-uds-package
         version: 0.1.0
         localPath: ../charts/config
       - name: uds-package-app-sso
-        namespace: uds-package-app-ns
+        namespace: ns-for-uds-package
         version: 0.1.0
         localPath: ../charts/sso
       - name: uds-package-app
-        namespace: uds-package-app-ns
+        namespace: ns-for-uds-package
         url: https://repo1.dso.mil/big-bang/product/packages/uds-package-app.git
         gitPath: chart
         version: "7.10.1-bb.0"
