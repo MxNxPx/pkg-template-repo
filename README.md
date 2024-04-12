@@ -1,1 +1,1 @@
-# pkg-template-repo
+# uds-package-app
